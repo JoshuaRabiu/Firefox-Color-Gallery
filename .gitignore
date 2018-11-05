@@ -23,7 +23,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-<<<<<<< HEAD
-server/dbLink.js
-=======
->>>>>>> Removed unreliable selenium wait methods, fixed server side rendering and some css
