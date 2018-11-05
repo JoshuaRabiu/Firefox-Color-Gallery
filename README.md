@@ -1,5 +1,5 @@
 # Firefox Color Gallery
-> A gallery of user-made [Firefox Color](https://color.firefox.com/) themes that allows for easy uploading of themes.
+> A place to share your [Firefox Color](https://color.firefox.com/) themes.
 
 ![Firefox Color Gallery](https://i.imgur.com/NqyXNt8.png)
 
