@@ -1,0 +1,41 @@
+.card {
+  display: inline-block;
+  width: 26vw;
+  height: 25.5vh;
+  background: #fff;
+  border-radius: 7px;
+  margin: .74vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+ .card p {
+  font-style: italic;
+  margin: .44vh;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.preview {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 26vw;
+  height: 15.3vh;
+  transition: outline 40ms;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12), 0 2.5px 4.5px 0 rgba(0, 0, 0, 0.08);
+}
+.preview:hover {
+  cursor: pointer;
+  outline: #43c2da solid 4px;  
+  -moz-outline-radius: 6px;
+}
+.card a {
+  color: blue;
+  text-decoration: underline;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .card {
+    width: 98vw;
+    height: 200px;
+  }
+  .preview {
+    width: 98vw;
+  }
+}

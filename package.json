@@ -1,0 +1,30 @@
+{
+  "name": "firefox-color-gallery",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "finalhandler": "^1.1.1",
+    "http-proxy": "^1.17.0",
+    "mongodb": "^3.1.8",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "serve-static": "^1.13.2",
+    "sharp": "^0.21.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {},
+  "proxy": "http://ec2-18-224-2-54.us-east-2.compute.amazonaws.com"
+}

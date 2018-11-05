@@ -1,0 +1,79 @@
+.upload-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 42.5vw;
+  height: 85vh;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  padding: 25px;
+}
+.upload-wrapper h2 {
+  position: relative;
+  left: 13px;
+}
+.upload-wrapper a {
+  -webkit-transition: all 50ms;
+  -o-transition: all 50ms;
+  transition: all 50ms;
+}
+.upload-wrapper a:hover {
+  color: blue;
+}
+input {
+  width: 350px;
+  height: 25px;
+  padding: 0 13px 0 13px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid lightgrey;
+}
+.submit {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  border-radius: 6px;
+  width: 11vw;
+  height: 5.8vh;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  background-image: -webkit-gradient(linear, left top, right top, from(#74ebd5), to(#9face6));
+  background-image: -webkit-linear-gradient(left, #74ebd5 0%, #9face6 100%);
+  background-image: -o-linear-gradient(left, #74ebd5 0%, #9face6 100%);
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+.submit:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+.submit p {
+  margin: 0 auto;
+  position: relative;
+  top: 3vh;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.upload-wrapper label {
+  position: relative;
+  left: 40%;
+}
+.err-msg {
+  color: red;
+}
+.back-arrow {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  padding-right: 10px;
+}

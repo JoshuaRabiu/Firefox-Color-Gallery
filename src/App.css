@@ -1,0 +1,32 @@
+.right {
+  float: right;
+}
+header {
+  height: 9vh;
+  background: #FFF;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+header h1, h2, h3, h4 {
+  display: inline-block;
+}
+header h2 {
+  position: relative;
+  left: 10vw;
+}
+.about {
+  position: relative;
+  right: 3vw;
+  top: 7%;
+}
+header label {
+  position: relative;
+  right: 4.8vw;
+  top: 15px;
+}
+.github {
+  position: relative;
+  top: 15px;
+  right: 15px;
+  width: 38px;
+  height: 38px;
+}

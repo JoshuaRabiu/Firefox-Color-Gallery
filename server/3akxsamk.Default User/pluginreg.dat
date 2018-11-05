@@ -1,0 +1,20 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.19t|$
+Arch|x86_64-msvc|$
+
+[PLUGINS]
+NPSWF64_31_0_0_108.dll|$
+C:\Windows\system32\Macromed\Flash\NPSWF64_31_0_0_108.dll|$
+31.0.0.108|$
+1536726366625|0|0|0|0|$
+Shockwave Flash 31.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+
+[INVALID]
+C:\Users\PC\AppData\Local\Google\Update\1.3.33.17\npGoogleUpdate3.dll|$
+1529651689314|$

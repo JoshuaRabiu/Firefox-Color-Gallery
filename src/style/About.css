@@ -1,0 +1,15 @@
+.about-wrapper {
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-right: -50%;
+   width: 50vw;
+}
+.about-wrapper a {
+  color: blue;
+  text-decoration: underline;
+}
+.about-wrapper h3 {
+  display: block;
+}
