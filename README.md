@@ -8,3 +8,6 @@
 # About 
 
 Firefox Color Gallery captures the preview image for each theme via a Selenium-Webdriver instance of Firefox. The Data for each theme is then stored via MongoDB. The server was made using Node.js's native [http module](https://nodejs.org/api/http.html), while static rendering is handled by the [serve-static](https://github.com/expressjs/serve-static) module.
+
+# License
+MIT
