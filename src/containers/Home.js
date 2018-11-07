@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { Upload } from '../components/Upload';
 import { Gallery } from '../components/Gallery';
 
-const Home =  ({ themeData, isLinkInvalid, authorNameExists, themeNameExists, showUpload=false, loadingStatus, counter, totalPages }) => {
+const Home =  ({ themeData, isLinkInvalid, authorNameError, themeNameError, showUpload=false, loadingStatus, counter, totalPages }) => {
   if (showUpload === true) {
-    return <Upload isLinkInvalid={isLinkInvalid} authorNameExists={authorNameExists} themeNameExists={themeNameExists} loadingStatus={loadingStatus}/>
+    return <Upload isLinkInvalid={isLinkInvalid} authorNameError={authorNameError} themeNameError={themeNameError} loadingStatus={loadingStatus}/>
   }
   return <Gallery themeData={themeData} counter={counter} totalPages={totalPages} loadingStatus={loadingStatus}/>
   
@@ -18,8 +18,8 @@ const mapStateToProps = state => {
     themeName: state.themeName,
     themeLink: state.themeLink,
     themeData: state.themeData,
-    authorNameExists: state.authorNameExists,
-    themeNameExists: state.themeNameExists,
+    authorNameError: state.authorNameError,
+    themeNameError: state.themeNameError,
     loadingStatus: state.loadingStatus,
     counter: state.counter,
     totalPages: state.totalPages

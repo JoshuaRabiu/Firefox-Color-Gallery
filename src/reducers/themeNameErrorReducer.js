@@ -1,9 +1,9 @@
-const initialState = null;
+const initialState = false;
 
-export const themeNameExistsReducer = (state=initialState, action) => {
+export const themeNameErrorReducer = (state=initialState, action) => {
   switch(action.type){
     case 'EMPTY_THEME_NAME':
-      return 'theme name is empty'
+      return true
     case 'VALID_THEME_NAME':
       return initialState
     default:

@@ -5,8 +5,8 @@ import { themeNameReducer } from './themeNameReducer';
 import { themeLinkReducer } from './themeLinkReducer';
 import { themeDataReducer } from './themeDataReducer';
 import { isLinkInvalidReducer } from './isLinkInvalidReducer';
-import { authorNameExistsReducer } from './authorNameExistsReducer';
-import { themeNameExistsReducer } from './themeNameExistsReducer';
+import { authorNameErrorReducer } from './authorNameErrorReducer';
+import { themeNameErrorReducer } from './themeNameErrorReducer';
 import { loadingStatusReducer } from './loadingStatusReducer';
 import { counterReducer } from './counterReducer';
 import { totalPagesReducer } from './totalPagesReducer';
@@ -18,8 +18,8 @@ export const rootReducer = combineReducers({
   themeLink: themeLinkReducer,
   themeData: themeDataReducer,
   isLinkInvalid: isLinkInvalidReducer,
-  authorNameExists: authorNameExistsReducer,
-  themeNameExists: themeNameExistsReducer,
+  authorNameError: authorNameErrorReducer,
+  themeNameError: themeNameErrorReducer,
   loadingStatus: loadingStatusReducer,
   counter: counterReducer,
   totalPages: totalPagesReducer

@@ -34,9 +34,9 @@ export const postTheme = () => {
       dispatch({ type: 'VALID_LINK' });
     }
     if (
-      store.getState().isLinkInvalid === null &&
-      store.getState().authorNameExists == null &&
-      store.getState().themeNameExists === null
+      store.getState().isLinkInvalid === false &&
+      store.getState().authorNameError === false &&
+      store.getState().themeNameError === false
     ) {
       dispatch({ type: 'LOADING_STATUS', payload: true });
       const { authorName, themeName, themeLink } = store.getState();

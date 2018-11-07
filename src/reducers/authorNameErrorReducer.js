@@ -1,9 +1,9 @@
-const initialState = null
+const initialState = false
 
-export const authorNameExistsReducer = (state=initialState, action) => {
+export const authorNameErrorReducer = (state=initialState, action) => {
   switch(action.type){
     case 'EMPTY_AUTHOR_NAME':
-      return 'empty author name'
+      return true
     case 'VALID_AUTHOR_NAME':
       return initialState
     default:
