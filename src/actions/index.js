@@ -15,24 +15,18 @@ export const postTheme = () => {
 
     const isValidFirefoxColorLink = link => !!link.startsWith('https://color.firefox.com/?theme=');
 
-    if (!doesInputHaveValue(authorName)) {
-      dispatch({ type: 'EMPTY_AUTHOR_NAME' });
-    }
-    if (!doesInputHaveValue(themeName)) {
-      dispatch({ type: 'EMPTY_THEME_NAME' });
-    }
-    if (!isValidFirefoxColorLink(themeLink)) {
-      dispatch({ type: 'INVALID_LINK' });
-    }
-    if (doesInputHaveValue(authorName)) {
-      dispatch({ type: 'VALID_AUTHOR_NAME' });
-    }
-    if (doesInputHaveValue(themeName)) {
-      dispatch({ type: 'VALID_THEME_NAME' });
-    }
-    if (isValidFirefoxColorLink(themeLink)) {
-      dispatch({ type: 'VALID_LINK' });
-    }
+    doesInputHaveValue(authorName) 
+      ? dispatch({ type: 'VALID_AUTHOR_NAME' }) 
+      : dispatch({ type: 'EMPTY_AUTHOR_NAME' });
+
+    doesInputHaveValue(themeName)
+      ? dispatch({ type: 'VALID_THEME_NAME' })
+      : dispatch({ type: 'EMPTY_THEME_NAME' });
+
+    isValidFirefoxColorLink(themeLink)
+      ? dispatch({ type: 'VALID_LINK' })
+      : dispatch({ type: 'INVALID_LINK' });
+
     if (
       !store.getState().isLinkInvalid &&
       !store.getState().authorNameError &&
