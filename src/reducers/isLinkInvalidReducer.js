@@ -1,12 +1,12 @@
 const initialState = false;
 
 export const isLinkInvalidReducer = (state=initialState, action) => {
-  switch(action.type){
+  switch (action.type) {
     case 'INVALID_LINK':
-      return true
+      return true;
     case 'VALID_LINK':
-      return initialState
+      return initialState;
     default:
-      return state
+      return state;
   }
 }

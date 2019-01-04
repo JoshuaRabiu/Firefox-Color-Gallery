@@ -5,4 +5,4 @@ export const themeNameReducer = (state = '', action) => {
     default:
       return state;
   }
-};
+}

@@ -1,8 +1,8 @@
 export const themeDataReducer = (state='', action) => {
-  switch(action.type){
+  switch (action.type) {
     case 'SEND_DATA':
-      return action.payload
+      return action.payload;
     default:
-      return state
+      return state;
   }
-}
+};

@@ -23,8 +23,8 @@ export const rootReducer = combineReducers({
   loadingStatus: loadingStatusReducer,
   counter: counterReducer,
   totalPages: totalPagesReducer
-})
+});
 
-const middleware = applyMiddleware(thunk)
-export const store = createStore(rootReducer, middleware)
+const middleware = applyMiddleware(thunk);
+export const store = createStore(rootReducer, middleware);
 

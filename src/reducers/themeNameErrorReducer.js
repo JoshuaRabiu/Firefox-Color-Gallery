@@ -1,12 +1,12 @@
 const initialState = false;
 
 export const themeNameErrorReducer = (state=initialState, action) => {
-  switch(action.type){
+  switch (action.type) {
     case 'EMPTY_THEME_NAME':
-      return true
+      return true;
     case 'VALID_THEME_NAME':
-      return initialState
+      return initialState;
     default:
-      return state
+      return state;
   }
 }

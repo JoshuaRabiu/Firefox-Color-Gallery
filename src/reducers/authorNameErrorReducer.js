@@ -1,12 +1,12 @@
-const initialState = false
+const initialState = false;
 
 export const authorNameErrorReducer = (state=initialState, action) => {
-  switch(action.type){
+  switch (action.type) {
     case 'EMPTY_AUTHOR_NAME':
-      return true
+      return true;
     case 'VALID_AUTHOR_NAME':
-      return initialState
+      return initialState;
     default:
-      return state
+      return state;
   }
 }
