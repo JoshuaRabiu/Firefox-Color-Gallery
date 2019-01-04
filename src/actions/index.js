@@ -67,7 +67,8 @@ export const changePage = direction => {
 
 const getNumberOfPages = () => {
   store.dispatch(dispatch => {
-    axios.get('http://ec2-18-188-223-76.us-east-2.compute.amazonaws.com/server/?dbSize').then(res => {
+    axios.get('http://ec2-18-188-223-76.us-east-2.compute.amazonaws.com/server/?dbSize')
+    .then(res => {
       const dbSize = Number(res.data);
       const totalNumOfPages = Math.ceil(dbSize / 9);
       dispatch({ type: 'SEND_TOTAL_NUMBER_OF_PAGES', payload: totalNumOfPages });
@@ -78,7 +79,8 @@ const getNumberOfPages = () => {
 export const loadThemes = () => {
   store.dispatch(dispatch => {
     getNumberOfPages();
-    axios.get(`http://ec2-18-188-223-76.us-east-2.compute.amazonaws.com/server/?${store.getState().counter}`).then(res => {
+    axios.get(`http://ec2-18-188-223-76.us-east-2.compute.amazonaws.com/server/?${store.getState().counter}`)
+    .then(res => {
       dispatch({ type: 'SEND_DATA', payload: res.data });
       dispatch({ type: 'LOADING_STATUS', payload: false });
     });
