@@ -4,14 +4,14 @@ const { Builder, By, until } = require('selenium-webdriver');
 const firefox = require('selenium-webdriver/firefox');
 const sharp = require('sharp');
 const MongoClient = require('mongodb').MongoClient;
-const dbLink = 'mongodb://localhost:27017';
 const serveStatic = require('serve-static');
 const finalhandler = require('finalhandler');
+const { dbLink } = require('./dbLink.js');
 
 const updateDb = newEntry => {
   MongoClient.connect(dbLink, async (error, client) => {
     if (error) console.error(error);
-    const db = await client.db('firefox-color-gallery-db').collection('Themes');
+    const db = await client.db('firefox-color-gallery-cluster').collection('Themes');
     await db.insertOne(newEntry, error => (error ? console.error(error) : 0));
     await client.close();
   });
@@ -35,7 +35,7 @@ server.on('request', async (request, response) => {
     if (request.method === 'GET') {
       MongoClient.connect(dbLink, async (error, client) => {
         if (error) console.error(error);
-        const db = await client.db('firefox-color-gallery-db').collection('Themes');
+        const db = await client.db('firefox-color-gallery-cluster').collection('Themes');
         const urlParam = url.parse(request.url).query;
 
         if (urlParam === 'dbSize') {
