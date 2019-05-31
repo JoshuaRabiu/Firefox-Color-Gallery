@@ -1,7 +1,7 @@
 # Firefox Color Gallery
 > A place to share your [Firefox Color](https://color.firefox.com/) themes.
 
-[Live link to site](https://joshuascript.github.io/Firefox-Color-Gallery/)
+[Live link to site](http://ec2-18-223-23-42.us-east-2.compute.amazonaws.com/#/)
 
 ![Firefox Color Gallery](https://i.imgur.com/NqyXNt8.png)
 
