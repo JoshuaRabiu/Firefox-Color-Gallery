@@ -13,7 +13,7 @@ export const App = () => (
     <Link to="/">
       <h2>Firefox Color Gallery</h2>
     </Link>	
-      <a target="_blank" rel="noopener noreferrer" href="https://github.com/JoshuaScript/Firefox-color-gallery">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/joshrabiu/Firefox-color-gallery">
         <img target="_blank" rel="noopener noreferrer" className="github right" alt="GitHub" src={GitHub} />
       </a>
       <Link to="/about">
