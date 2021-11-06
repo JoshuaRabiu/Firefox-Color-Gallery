@@ -12,7 +12,7 @@ export const About = () => (
     <p>
       Firefox Color gallery is a collection themes made with <a href="https://color.firefox.com">Firefox Color</a> that allows users to easily upload themes of their own.
       It was made primarily with React and Node.js's native http module.<br />
-      The source code can be found <a href="https://github.com/joshrabiu/Firefox-color-gallery">here on GitHub</a>.
+      The source code can be found <a href="https://github.com/JoshuaRabiu/Firefox-color-gallery">here on GitHub</a>.
     </p>
     <h3>
       How does it work?
